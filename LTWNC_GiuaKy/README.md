@@ -21,12 +21,7 @@ npm run preview    # chạy bản build production
 
 Giả lập API lỗi: mở `http://localhost:5173/?fail`.
 
-**Cách lấy kết quả trong báo cáo** (không có số liệu nào viết tay):
 
-- **Ảnh giao diện và số liệu ở mục 3:** chụp tự động bằng Google Chrome (điều khiển qua `puppeteer-core`) trên bản build production (`npm run preview`). Chrome thao tác như người dùng thật: gõ tìm kiếm, bấm lọc, bấm Mượn/Trả, đổi theme, chuyển trang. Các con số (số thẻ sách, số bản còn lại, thời gian tải, file JS được tải) được đọc trực tiếp từ trang. Việc kiểm tra file được tải khi vào `/stats` tương đương xem tab Network khi bật F12. Màn hình desktop có độ rộng 1920px, điện thoại 390px.
-- **Ảnh kết quả test ở mục 5:** chạy thật lệnh `npm test -- --verbose --reporters=default`, giữ nguyên văn output của Jest.
-
-Toàn bộ ảnh nằm trong [docs/images/](docs/images/).
 
 ---
 
